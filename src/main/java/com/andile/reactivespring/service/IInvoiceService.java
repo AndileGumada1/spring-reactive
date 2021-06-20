@@ -12,4 +12,6 @@ public interface IInvoiceService {
     public Mono<Invoice> getOneInvoice(Integer id);
 
     public Mono<Void> deleteInvoice(Integer id);
+
+    public Mono update(Integer id, Invoice invoice);
 }
